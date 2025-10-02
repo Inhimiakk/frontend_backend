@@ -1,0 +1,63 @@
+:root{
+    --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+    --main-color: #2E1114;
+    --grey-color: #eeeeee;
+    --second-color: #501B1D;
+    --violet: #a42547;
+    --rose: #de8d99;
+    --main-font: "Raleway",
+        sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--main-font);
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    font-family: var(--main-font);
+}
+
+body {
+    font-family: var(--second-font);
+    background-color: var(--grey-color);
+    color: var(--main-color);
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+a {
+    display: inline-block;
+    transition: color 250ms var(--cubic);
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover,
+a:focus {
+    color: var(--second-color);
+}
