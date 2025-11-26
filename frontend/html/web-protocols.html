@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WEB-протоколы — учебный раздел</title>
+  <link rel="stylesheet" href="/навчальний сайт/frontend/css/style.css">
+</head>
+<body>
+
+<nav class="top-nav">
+  <div class="inner">
+    <a href="html.html">HTML</a>
+    <a href="css.html">CSS</a>
+    <a href="web-protocols.html" class="active">WEB-протоколы</a>
+    <a href="sockets.html">Сокеты</a>
+    <a href="fastapi.html">FastApi</a>
+    <a href="index.html">На головну</a>
+  </div>
+</nav>
+
+<main class="container">
+  <h1 class="page-title">WEB-протоколы</h1>
+  <p class="page-subtitle">HTTP/HTTPS, методы, коды ответов, REST.</p>
+
+  <section class="card">
+    <h2>Учебный материал</h2>
+    <p><b>HTTP</b> — протокол обмена между клиентом (браузер) и сервером. Клиент отправляет запрос, сервер отвечает.</p>
+    <ul>
+      <li><b>Методы</b>: <code>GET</code> (получить), <code>POST</code> (создать), <code>PUT/PATCH</code> (обновить), <code>DELETE</code> (удалить).</li>
+      <li><b>Коды</b>: 200 OK, 201 Created, 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Server Error.</li>
+      <li><b>HTTPS</b> — HTTP поверх шифрования TLS (безопасный канал).</li>
+      <li><b>REST</b> — стиль проектирования API: ресурсы + методы + JSON.</li>
+    </ul>
+    <p>Пример запроса:</p>
+    <pre><code>GET /courses HTTP/1.1
+Host: example.com</code></pre>
+  </section>
+
+  <section class="card task">
+    <div class="badge">Задача</div>
+    <h2>Разбери запросы</h2>
+    <p>Даны пути API:</p>
+    <ul>
+      <li><code>/courses</code></li>
+      <li><code>/courses/12</code></li>
+    </ul>
+    <p>Напиши, какие HTTP-методы ты используешь для:</p>
+    <ol>
+      <li>получения списка курсов;</li>
+      <li>создания нового курса;</li>
+      <li>получения курса с id=12;</li>
+      <li>обновления курса 12;</li>
+      <li>удаления курса 12.</li>
+    </ol>
+  </section>
+    <section class="card task cta-course">
+  <div class="badge">Материалы курса</div>
+  <h2>Все материалы курса — после покупки</h2>
+  <p>
+    Полные конспекты, презентации, домашние задания и решения доступны после оплаты.
+  </p>
+  <a class="btn btn-primary" href="index.html">
+    Купити курс і отримати доступ
+  </a>
+</section>
+</main>
+
+<footer class="footer">Учебный раздел · WEB-протоколы</footer>
+</body>
+</html>

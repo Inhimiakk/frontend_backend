@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Сокеты — учебный раздел</title>
+  <link rel="stylesheet" href="/навчальний сайт/frontend/css/style.css">
+</head>
+<body>
+
+<nav class="top-nav">
+  <div class="inner">
+    <a href="html.html">HTML</a>
+    <a href="css.html">CSS</a>
+    <a href="web-protocols.html">WEB-протоколы</a>
+    <a href="sockets.html" class="active">Сокеты</a>
+    <a href="fastapi.html">FastApi</a>
+    <a href="index.html">На головну</a>
+  </div>
+</nav>
+
+<main class="container">
+  <h1 class="page-title">Сокеты</h1>
+  <p class="page-subtitle">TCP/UDP, клиент-сервер, порты.</p>
+
+  <section class="card">
+    <h2>Учебный материал</h2>
+    <p><b>Сокет</b> — точка связи между двумя программами по сети. Обычно есть серверный сокет (слушает порт) и клиентский (подключается).</p>
+    <ul>
+      <li><b>TCP</b> — надёжная доставка, порядок сообщений сохраняется (веб, почта).</li>
+      <li><b>UDP</b> — быстрее, но без гарантии доставки (стримы, игры).</li>
+      <li><b>Порт</b> — номер сервиса на машине (например 80 для HTTP).</li>
+      <li>Схема: сервер <code>bind → listen → accept</code>, клиент <code>connect → send/recv</code>.</li>
+    </ul>
+  </section>
+
+  <section class="card task">
+    <div class="badge">Задача</div>
+    <h2>Схема работы</h2>
+    <p>Опиши текстом, как происходит обмен данными в TCP-чате:</p>
+    <ol>
+      <li>что делает сервер до подключения клиента;</li>
+      <li>что делает клиент, чтобы подключиться;</li>
+      <li>как идёт отправка и получение сообщений;</li>
+      <li>что происходит при разрыве соединения.</li>
+    </ol>
+  </section>
+    <section class="card task cta-course">
+  <div class="badge">Материалы курса</div>
+  <h2>Все материалы курса — после покупки</h2>
+  <p>
+    Полные конспекты, презентации, домашние задания и решения доступны после оплаты.
+  </p>
+  <a class="btn btn-primary" href="index.html">
+    Купити курс і отримати доступ
+  </a>
+</section>
+</main>
+
+<footer class="footer">Учебный раздел · Сокеты</footer>
+</body>
+</html>

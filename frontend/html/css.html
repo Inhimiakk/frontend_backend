@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS — учебный раздел</title>
+  <link rel="stylesheet" href="/навчальний сайт/frontend/css/style.css">
+</head>     
+<body>
+
+<nav class="top-nav">
+  <div class="inner">
+    <a href="html.html">HTML</a>
+    <a href="css.html" class="active">CSS</a>
+    <a href="web-protocols.html">WEB-протоколы</a>
+    <a href="sockets.html">Сокеты</a>
+    <a href="fastapi.html">FastApi</a>
+    <a href="index.html">На головну</a>
+  </div>
+</nav>
+
+<main class="container">
+  <h1 class="page-title">CSS</h1>
+  <p class="page-subtitle">Стилизация, каскад, Flexbox и Grid.</p>
+
+  <section class="card">
+    <h2>Учебный материал</h2>
+    <p><b>CSS (Cascading Style Sheets)</b> — язык стилей, который задаёт внешний вид HTML-элементов: цвета, отступы, сетки, шрифты, адаптивность.</p>
+    <ul>
+      <li><b>Селекторы</b> выбирают элементы: по тегу (<code>p</code>), классу (<code>.card</code>), id (<code>#header</code>).</li>
+      <li><b>Каскад</b>: если правил несколько, выигрывает более специфичное или то, что ниже.</li>
+      <li><b>Box-model</b>: у каждого блока есть <code>content → padding → border → margin</code>.</li>
+      <li><b>Flexbox</b> удобен для строк/колонок, выравнивания элементов.</li>
+      <li><b>Grid</b> — для сложных таблиц/сеток.</li>
+    </ul>
+
+    <pre><code>.box{
+  width: 200px;
+  padding: 12px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+}</code></pre>
+  </section>
+
+  <section class="card task">
+    <div class="badge">Задача</div>
+    <h2>Стилизуй блоки</h2>
+    <p>Создай страницу с 3 карточками (div). Для каждой:</p>
+    <ul>
+      <li>фон светлый/тёмный, скругление 12–16px;</li>
+      <li>тень;</li>
+      <li>отступы внутри 16px;</li>
+      <li>карточки расположены в ряд через Flexbox, на мобилке — колонкой.</li>
+    </ul>
+  </section>
+
+  <section class="card task cta-course">
+  <div class="badge">Материалы курса</div>
+  <h2>Все материалы курса — после покупки</h2>
+  <p>
+    Полные конспекты, презентации, домашние задания и решения доступны после оплаты.
+  </p>
+  <a class="btn btn-primary" href="index.html">
+    Купити курс і отримати доступ
+  </a>
+</section>
+
+</main>
+
+<footer class="footer">Учебный раздел · CSS</footer>
+</body>
+</html>

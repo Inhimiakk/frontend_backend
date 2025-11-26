@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML — учебный раздел</title>
+  <link rel="stylesheet" href="/навчальний сайт/frontend/css/style.css">
+</head>
+<body>
+
+<nav class="top-nav">
+  <div class="inner">
+    <a href="html.html" class="active">HTML</a>
+    <a href="css.html">CSS</a>
+    <a href="web-protocols.html">WEB-протоколы</a>
+    <a href="sockets.html">Сокеты</a>
+    <a href="fastapi.html">FastApi</a>
+    <a href="index.html">На головну</a>
+  </div>
+</nav>
+
+<main class="container">
+  <h1 class="page-title">HTML</h1>
+  <p class="page-subtitle">Структура страницы, семантика, формы и ссылки.</p>
+
+  <section class="card">
+    <h2>Учебный материал</h2>
+    <p><b>HTML (HyperText Markup Language)</b> — язык разметки, который описывает структуру веб-страницы. Он не задаёт внешний вид напрямую, а лишь определяет элементы: заголовки, абзацы, списки, изображения, формы.</p>
+    <p>Основные идеи:</p>
+    <ul>
+      <li>Документ начинается с <code>&lt;!DOCTYPE html&gt;</code> и корневого тега <code>&lt;html&gt;</code>.</li>
+      <li>В <code>&lt;head&gt;</code> лежат метаданные: кодировка, заголовок страницы, подключение CSS/JS.</li>
+      <li>В <code>&lt;body&gt;</code> — видимая часть страницы.</li>
+      <li>Семантические теги (<code>&lt;header&gt;, &lt;main&gt;, &lt;section&gt;, &lt;footer&gt;</code>) помогают поиску и доступности.</li>
+      <li>Формы (<code>&lt;form&gt;</code>) собирают данные пользователя через <code>&lt;input&gt;, &lt;textarea&gt;, &lt;select&gt;</code>.</li>
+    </ul>
+
+    <p>Пример базовой структуры:</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Моя страница&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Привет!&lt;/h1&gt;
+    &lt;p&gt;Это абзац текста.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </section>
+
+  <section class="card task">
+    <div class="badge">Задача</div>
+    <h2>Сверстай мини-страницу</h2>
+    <p>Сделай HTML-страницу «О себе», где будут:</p>
+    <ul>
+      <li>заголовок 1 уровня с именем;</li>
+      <li>2 абзаца текста (кто ты и чем занимаешься);</li>
+      <li>список из 3 любимых занятий;</li>
+      <li>ссылка на соцсеть/портфолио;</li>
+      <li>картинка (можно любая из интернета).</li>
+    </ul>
+    <p>Используй семантические теги: <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>.</p>
+  </section>
+    <section class="card task cta-course">
+  <div class="badge">Материалы курса</div>
+  <h2>Все материалы курса — после покупки</h2>
+  <p>
+    Полные конспекты, презентации, домашние задания и решения доступны после оплаты.
+  </p>
+  <a class="btn btn-primary" href="index.html">
+    Купити курс і отримати доступ
+  </a>
+</section>
+</main>
+
+<footer class="footer">Учебный раздел · HTML</footer>
+</body>
+</html>

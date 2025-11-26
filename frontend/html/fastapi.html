@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FastAPI — учебный раздел</title>
+  <link rel="stylesheet" href="/навчальний сайт/frontend/css/style.css">
+</head>
+<body>
+
+<nav class="top-nav">
+  <div class="inner">
+    <a href="html.html">HTML</a>
+    <a href="css.html">CSS</a>
+    <a href="web-protocols.html">WEB-протоколы</a>
+    <a href="sockets.html">Сокеты</a>
+    <a href="fastapi.html" class="active">FastApi</a>
+    <a href="index.html">На головну</a>
+  </div>
+</nav>
+
+<main class="container">
+  <h1 class="page-title">FastAPI</h1>
+  <p class="page-subtitle">Создание API на Python, маршруты, модели.</p>
+
+  <section class="card">
+    <h2>Учебный материал</h2>
+    <p><b>FastAPI</b> — современный фреймворк для создания веб-API на Python. Он автоматически генерирует документацию Swagger и валидирует данные через Pydantic.</p>
+    <ul>
+      <li><b>Маршрут</b> — функция с декоратором <code>@app.get</code>, <code>@app.post</code> и т.д.</li>
+      <li><b>Pydantic-модель</b> описывает входные данные (типизация + проверка).</li>
+      <li>Сервер запускают через <code>uvicorn main:app --reload</code>.</li>
+    </ul>
+
+    <pre><code>from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+class Item(BaseModel):
+    name: str
+    price: float
+
+@app.post(\"/items\")
+def create_item(item: Item):
+    return {\"ok\": True, \"item\": item}</code></pre>
+  </section>
+
+  <section class="card task">
+    <div class="badge">Задача</div>
+    <h2>Сделай своё API</h2>
+    <p>Напиши FastAPI-приложение с ресурсом <code>/notes</code>:</p>
+    <ul>
+      <li><code>GET /notes</code> — вернуть список заметок (пусть пока пустой/заглушка);</li>
+      <li><code>POST /notes</code> — принять JSON с полями <code>title</code>, <code>text</code> и вернуть эту заметку обратно.</li>
+    </ul>
+    <p>Добавь Pydantic-модель для заметки.</p>
+  </section>
+    <section class="card task cta-course">
+  <div class="badge">Материалы курса</div>
+  <h2>Все материалы курса — после покупки</h2>
+  <p>
+    Полные конспекты, презентации, домашние задания и решения доступны после оплаты.
+  </p>
+  <a class="btn btn-primary" href="index.html">
+    Купити курс і отримати доступ
+  </a>
+</section>
+</main>
+
+<footer class="footer">Учебный раздел · FastAPI</footer>
+</body>
+</html>
